@@ -1,0 +1,241 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Idroid';
+    src: url('fontes/idroid.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('fontes/BebasNeue-Regular.otf') format('opentype');
+}
+
+:root {
+    --cor0: #c5ebd6;
+    --cor1: #83E1AD;
+    --cor2: #3DDC84;
+    --cor3: #2FA866;
+    --cor4: #1A5C37;
+    --cor5: #063d1e;
+    --fonte0: Arial, Helvetica, sans-serif;
+    --fonte1: 'Bebas Neue';
+    --fonte2: 'Idroid';
+}
+
+body{
+    background-color: var(--cor1);
+}
+
+* {
+    margin: 0px;
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+    box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.274);
+}
+
+header > h1 {
+    font-size: 40px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color:white;
+    font-style: normal;
+    text-align: center;
+    padding: 30px;
+    font-family: var(--fonte1);
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.562);
+}
+
+header > p {
+    color:white;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-family: var(--fonte0);
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.719);
+}
+
+nav {
+    padding: 10px;
+    font-family: var(--fonte0);
+    font-weight: bold;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.719);
+}
+
+#menu {
+    text-decoration: none;
+    color: var(--cor0);
+    margin-left: 8px;
+    padding: 11px;
+    transition-duration: 0.5s;
+}
+
+#menu:hover {
+    background-color: #2fa8653f;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+main {
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    margin: auto;
+    min-width: 300px;
+    max-width: 800px;
+    padding: 20px;
+    border-radius: 0px 0px 25px 25px;
+}
+
+article{
+    padding: 10px;
+}
+
+article > h1 {
+    font-size: 30px;
+    font-family: var(--fonte2);
+    color: var(--cor4);
+}
+
+main strong {
+    color: var(--cor5);
+    text-shadow: 1px 1px 5px var(--cor0);
+}
+
+article > h2 {
+    font-family: var(--fonte2);
+    color: var(--cor4);
+    font-size: 20px;
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    padding: 3px;
+    border-radius: 4px;
+}
+
+#links {
+    color: var(--cor5);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 2px;
+
+}
+
+#links:hover {
+    color: var(--cor5);
+    text-decoration:underline;
+    font-weight: bold;
+    background-color: var(--cor1);
+    padding: 2px;
+    border-radius: 5px;
+
+}
+
+#links::after {
+    content: "\1F517";
+}
+
+article > p {
+    font-family: var(--fonte0);
+    font-style: normal;
+    line-height: 1.5em;
+    text-align: justify;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-indent: 20px;
+}
+
+img{
+    width: 100%;
+}
+
+.video {
+    position: relative;
+    background-color: var(--cor4);
+    height: 0px;
+    margin: 0px -30px;
+    padding-bottom: 60.5%;
+}
+
+.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+aside {
+    background-color: var(--cor0);
+    border-radius: 25px;
+    padding: 0px;
+}
+
+h3 {
+    background-color: var(--cor3);
+    padding: 10px;
+    border-radius: 20px 20px 0px 0px;
+    margin: 0px;
+    border: 0px;
+    font-family: var(--fonte0);
+    color: white;
+
+}
+
+aside > p{
+    font-family: var(--fonte0);
+    font-style: normal;
+    line-height: 1.5em;
+    text-align: justify;
+    margin-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    text-indent: 20px;
+}
+
+aside > ul {
+    list-style: '\2714\0020\0020';
+    columns: 2;
+    list-style-position: inside;
+    font-family: var(--fonte0);
+    padding: 10px;
+}
+
+#final{
+    font-family: var(--fonte0);
+    font-style: normal;
+    line-height: 1.5em;
+    text-align: justify;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-indent: 20px;
+}
+
+#rodape {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+#rodape:hover {
+    background-color: #2fa8653f;
+    padding-top: 7px;
+    padding-right: 5px;
+    padding-bottom: 7px;
+    padding-left: 5px;
+    border-radius: 5px;
+    transition-duration: 0.2s;
+}
+
+footer{
+    background-color: var(--cor4);
+    margin-top: 20px;
+    margin-bottom: 0px;
+    font-family: var(--fonte0);
+    padding: 15px;
+    text-align: center;
+    color: white;
+}
+
